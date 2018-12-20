@@ -1,0 +1,7 @@
+C:\My Stuff\Mokyklele C#\namuDarbai\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.exe.config
+C:\My Stuff\Mokyklele C#\namuDarbai\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.exe
+C:\My Stuff\Mokyklele C#\namuDarbai\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.pdb
+C:\My Stuff\Mokyklele C#\namuDarbai\DiceGame\DiceGame\DiceGame\obj\Debug\DiceGame.csprojAssemblyReference.cache
+C:\My Stuff\Mokyklele C#\namuDarbai\DiceGame\DiceGame\DiceGame\obj\Debug\DiceGame.csproj.CoreCompileInputs.cache
+C:\My Stuff\Mokyklele C#\namuDarbai\DiceGame\DiceGame\DiceGame\obj\Debug\DiceGame.exe
+C:\My Stuff\Mokyklele C#\namuDarbai\DiceGame\DiceGame\DiceGame\obj\Debug\DiceGame.pdb
