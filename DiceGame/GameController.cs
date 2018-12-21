@@ -9,10 +9,10 @@ namespace DiceGame
     class GameController
     {
         private List<int> totalRoledCount;
-        private List<int>  numberScoredPoints= new List<int>();
         private int sumRolls;
         private int rollDice;
         Dictionary<int, int> findWiner = new Dictionary<int, int>();
+        
 
         Random rand = new Random();
 
@@ -27,7 +27,7 @@ namespace DiceGame
                 findWiner.Add(i, sumRolls);
             }
             Console.ReadKey();
-            Winner();
+            CheckWinnerCount(setDiceCount);
         }
 
         public void RollDice(int setDiceCount)
@@ -49,27 +49,26 @@ namespace DiceGame
         }
 
 
-        public void CheckWinnerCount(int winner)
+        public void CheckWinnerCount(int setDiceCount)
         {
-            //int result = from p in winner
-            //             group p by p.Value into g
-            //             where g.Count() > 1
-            //             select g;
+            int addWinnerCount = 0;
+            int setPlayerCount = 0;
+            var howMAnyWinners = findWiner.Values.Max();
+            var checkWinnerCount = findWiner.Where(x => x.Value == howMAnyWinners).Select(p => p.Key);
 
-
-            //foreach (var r in result)
-            //{
-            //    var sameValue = (from p in r
-            //                     select p.Key + "").ToArray();
-
-
-            //    Console.WriteLine("Player{0} has the same value {1}:",
-            //                      string.Join(",", sameValue), r.Key);
-            //}
-
-            //Console.ReadKey();
-           // var lookup = findWiner.ToLookup(x => x.Value, x => x.Key).Where(x => x.Count() > 1);
-           // Winner();
+            foreach (var name in checkWinnerCount)
+            {
+                addWinnerCount++;
+                setPlayerCount = addWinnerCount;
+            }
+            if (addWinnerCount >= 2)
+            {
+                PlayerRoll(setPlayerCount, setDiceCount);
+            }
+            else
+            {
+                Winner();
+            }
         }
 
         public void Winner()
